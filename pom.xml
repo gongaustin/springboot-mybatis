@@ -11,14 +11,21 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.2.5.RELEASE</version>
+        <version>1.5.3.RELEASE</version>
     </parent>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <version.spring>3.2.9.RELEASE</version.spring>
-        <version.jackson>2.4.4</version.jackson>
-        <java.version>1.7</java.version>
+        <version.spring>4.3.9.RELEASE</version.spring>
+        <version.jackson>2.9.0</version.jackson>
+        <java.version>1.8</java.version>
+        <version.mybatis>3.2.8</version.mybatis>
+        <version.mybatis-spring>1.2.2</version.mybatis-spring>
+        <version.jedis>2.9.0</version.jedis>
+        <version.fastjson>1.1.43</version.fastjson>
+        <version.swagger-springmvc>0.9.5</version.swagger-springmvc>
+        <version.commons-pool>1.6</version.commons-pool>
+        <version.junit>4.12</version.junit>
     </properties>
 
     <dependencies>
@@ -38,17 +45,22 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-
+        <!--SpringBoot热部署-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
 
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
-            <version>1.2.2</version>
+            <version>${version.mybatis-spring}</version>
         </dependency>
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.2.8</version>
+            <version>${version.mybatis}</version>
         </dependency>
 
         <dependency>
@@ -61,16 +73,16 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
-        <!---->
+        <!--fastJson-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.1.43</version>
+            <version>${version.fastjson}</version>
         </dependency>
         <dependency>
             <groupId>com.mangofactory</groupId>
             <artifactId>swagger-springmvc</artifactId>
-            <version>0.9.5</version>
+            <version>${version.swagger-springmvc}</version>
         </dependency>
 
         <dependency>
@@ -87,6 +99,23 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
             <version>${version.jackson}</version>
+        </dependency>
+        <!--jedis-redis连接池-->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>${version.jedis}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-pool</groupId>
+            <artifactId>commons-pool</artifactId>
+            <version>${version.commons-pool}</version>
+        </dependency>
+        <!--单元测试-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${version.junit}</version>
         </dependency>
     </dependencies>
 

@@ -1,4 +1,4 @@
-package cn.no7player;
+package com.gongjun;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.log4j.Logger;
@@ -19,7 +19,7 @@ import javax.sql.DataSource;
 @EnableAutoConfiguration
 @SpringBootApplication
 @ComponentScan
-@MapperScan("cn.no7player.mapper")
+@MapperScan("com.gongjun.mapper")
 public class Application {
     private static Logger logger = Logger.getLogger(Application.class);
 
@@ -55,5 +55,7 @@ public class Application {
         SpringApplication.run(Application.class, args);
         logger.info("SpringBoot Start Success");
     }
+
+
 
 }

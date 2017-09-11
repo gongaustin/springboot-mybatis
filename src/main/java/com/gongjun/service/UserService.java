@@ -1,7 +1,7 @@
-package cn.no7player.service;
+package com.gongjun.service;
 
-import cn.no7player.mapper.UserMapper;
-import cn.no7player.model.User;
+import com.gongjun.mapper.UserMapper;
+import com.gongjun.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

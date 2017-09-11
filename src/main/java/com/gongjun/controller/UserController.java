@@ -1,7 +1,7 @@
-package cn.no7player.controller;
+package com.gongjun.controller;
 
-import cn.no7player.model.User;
-import cn.no7player.service.UserService;
+import com.gongjun.model.User;
+import com.gongjun.service.UserService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

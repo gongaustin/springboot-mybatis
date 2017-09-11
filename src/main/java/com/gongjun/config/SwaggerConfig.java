@@ -1,4 +1,4 @@
-package cn.no7player.config;
+package com.gongjun.config;
 
 import com.mangofactory.swagger.configuration.SpringSwaggerConfig;
 import com.mangofactory.swagger.models.dto.ApiInfo;
