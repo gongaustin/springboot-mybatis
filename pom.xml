@@ -13,7 +13,7 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.3.RELEASE</version>
     </parent>
-
+    <!--依赖包版本控制-->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <version.spring>4.3.9.RELEASE</version.spring>
