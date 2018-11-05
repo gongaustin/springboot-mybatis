@@ -28,7 +28,7 @@ public class redisConn {
 		/**
 		 * 权限认证
 		 */
-		// jedis.auth("admin");
+		 jedis.auth("123456");
 	}
 
 	@Test
@@ -36,6 +36,7 @@ public class redisConn {
 		List<String> list = new ArrayList<String>();
 		list.add("123");
 		list.add("abc");
+		jedis.set("name",list.toString());
 		jedis.set("NAME", "lixiaohong");
 		System.out.println(jedis.get("name"));
 		System.out.println(jedis.get("NAME"));
