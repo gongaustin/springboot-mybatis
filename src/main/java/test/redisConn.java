@@ -28,7 +28,7 @@ public class redisConn {
 		/**
 		 * 权限认证
 		 */
-		// jedis.auth("admin");
+		jedis.auth("123456");
 	}
 
 	@Test
