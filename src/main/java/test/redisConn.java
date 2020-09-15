@@ -13,6 +13,7 @@ import redis.clients.jedis.Jedis;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 /**
@@ -46,6 +47,7 @@ public class redisConn {
 		jedis.set("NAME", "lixiaohong");
 		System.out.println(jedis.get("name"));
 		System.out.println(jedis.get("NAME"));
+
 
 	}
 
