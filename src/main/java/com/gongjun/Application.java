@@ -1,5 +1,6 @@
 package com.gongjun;
 
+import com.gongjun.service.UserService;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.log4j.Logger;
 import org.mybatis.spring.SqlSessionFactoryBean;
@@ -8,6 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
@@ -78,6 +80,15 @@ public class Application {
         SpringApplication.run(Application.class, args);
         logger.info("SpringBoot Start Success");
     }
+
+    /**
+     * Start
+     */
+//    public static void main(String[] args) {
+//        AnnotationConfigApplicationContext acc = new AnnotationConfigApplicationContext(Application.class);
+//        acc.getBean(UserService.class);
+//
+//    }
 
 
 
