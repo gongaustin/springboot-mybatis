@@ -85,6 +85,7 @@ public class Application {
      * Start
      */
 //    public static void main(String[] args) {
+//        初始化Spring环境
 //        AnnotationConfigApplicationContext acc = new AnnotationConfigApplicationContext(Application.class);
 //        acc.getBean(UserService.class);
 //
