@@ -25,7 +25,7 @@
         <version.fastjson>1.1.43</version.fastjson>
         <version.swagger-springmvc>0.9.5</version.swagger-springmvc>
         <version.commons-pool>1.6</version.commons-pool>
-        <version.junit>4.12</version.junit>
+        <version.junit>4.13.1</version.junit>
     </properties>
 
     <dependencies>
