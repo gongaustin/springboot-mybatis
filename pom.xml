@@ -19,7 +19,7 @@
         <version.spring>4.3.9.RELEASE</version.spring>
         <version.jackson>2.9.0</version.jackson>
         <java.version>1.8</java.version>
-        <version.mybatis>3.2.8</version.mybatis>
+        <version.mybatis>3.5.6</version.mybatis>
         <version.mybatis-spring>1.2.2</version.mybatis-spring>
         <version.jedis>2.9.0</version.jedis>
         <version.fastjson>1.1.43</version.fastjson>
